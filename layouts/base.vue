@@ -1,11 +1,16 @@
 <template>
-    <Header />
+    <div id="main">
+        <Header />
 
-    <div class="content">
-        <slot></slot>
+        <div id="content">
+            <slot></slot>
+        </div>
     </div>
+
+    <Footer />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import Header from './base/header.vue'
+import Footer from './base/footer.vue'
 </script>

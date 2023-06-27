@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full shadow-sm">
+    <header class="w-full shadow-sm relative">
         <!-- 大点屏幕布局 -->
         <div class="container md:flex hidden items-center h-[72px]">
             <img class="w-[72px] h-[72px] mr-10" src="../../assets/image/base/logo.png" alt="首页" />
@@ -14,7 +14,7 @@
         </div>
 
         <!-- 小屏幕下的布局 -->
-        <div class="container md:hidden h-[60px] flex items-center relative">
+        <div class="container md:hidden h-[60px] flex items-center">
             <img class="w-[60px] h-[60px] mr-10" src="../../assets/image/base/logo.png" alt="首页" />
 
             <span class="ml-auto w-8 h-8 text-gray-900">

@@ -4,10 +4,10 @@
         <div class="container md:flex hidden items-center h-[72px]">
             <img class="w-[72px] h-[72px] mr-10" src="../../assets/image/base/logo.png" alt="首页" />
 
-            <a v-for="(item, index) in links" :key="index" class="flex items-center relative group cursor-pointer h-full mr-5" :href="item.value">
+            <NuxtLink v-for="(item, index) in links" :key="index" :to="item.value" class="flex items-center relative group cursor-pointer h-full mr-5">
                 <div class="text-black text-[15px] font-medium">{{ item.label }}</div>
                 <div :class="lineClass(item)"></div>
-            </a>
+            </NuxtLink>
         
             <a class="text-gray-600 text-[13px] cursor-pointer ml-auto hover:text-black" href="#">登录</a>
             <a class="text-gray-600 text-[13px] cursor-pointer hover:text-black ml-3" href="#">注册</a>
@@ -23,12 +23,12 @@
                 </svg>
             </span>
 
-            <div class="w-screen h-screen bg-black/40 absolute left-0 top-0">
+            <div class="w-screen h-screen bg-black/40 fixed left-0 top-0">
                 <div class="w-60 h-screen bg-white flex flex-col p-4 absolute top-0 right-0 rounded-s-sm">
-                    <a v-for="(item, index) in links" :key="index" class="flex items-center relative group cursor-pointer w-full h-12 mr-5" :href="item.value">
+                    <NuxtLink v-for="(item, index) in links" :key="index" :to="item.value" class="flex items-center relative group cursor-pointer w-full h-12 mr-5">
                         <div class="text-black text-[15px] font-medium">{{ item.label }}</div>
                         <div :class="lineClass(item)"></div>
-                    </a>
+                    </NuxtLink>
                     
                     <div class="mt-5">
                         <a class="text-gray-600 text-[13px] cursor-pointer hover:text-black" href="#">登录</a>

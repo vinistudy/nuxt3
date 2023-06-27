@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full shadow-sm relative">
+    <header class="w-full shadow-sm relative z-50">
         <!-- 大点屏幕布局 -->
         <div class="container md:flex hidden items-center h-[72px]">
             <img class="w-[72px] h-[72px] mr-10" src="../../assets/image/base/logo.png" alt="首页" />
@@ -55,8 +55,8 @@ interface Item {
 
 const links:Array<Item> = [ 
     {label: '产品', value: '/', active: false},
-    {label: 'Web3D',value: 'web3D', active: false},
-    {label: '关于我们',value: 'about', active: false},
+    {label: 'Web3D',value: '/web3D', active: false},
+    {label: '关于我们',value: '/about', active: false},
     {label: '技术博客',value: 'https://blog.vini123.com', active: false},
 ];
 
